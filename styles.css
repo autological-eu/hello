@@ -10,10 +10,9 @@ main { flex: 1; display: flex; align-items: center; }
 .hero { width: 100%; min-height: 590px; padding: 68px 0 66px; display: grid; grid-template-columns: 1.15fr 1fr; align-items: center; gap: 32px; }
 h1 { margin: 0; font-size: clamp(56px, 6.5vw, 100px); line-height: 1.04; letter-spacing: -.065em; font-weight: 500; }
 .logical { color: #777694; }
-.logo-stage { position: relative; text-align: center; padding: 15px 0; }
-.logo-frame { animation: settle 1.2s cubic-bezier(.2,.7,.3,1) both; }
-.logo-frame img { width: min(100%, 490px); height: auto; display: block; margin: auto; }
-@keyframes settle { from { opacity: 0; transform: translateY(18px) rotate(-6deg); } to { opacity: 1; transform: none; } }
+.logo-stage { position: relative; text-align: center; padding: 15px 0; overflow: hidden; }
+.logo-frame img { width: min(100%, 490px); height: auto; display: block; margin: auto; animation: logo-loop 1.6s cubic-bezier(.65,0,.25,1) both; }
+@keyframes logo-loop { from { transform: rotate(-360deg); } to { transform: rotate(0deg); } }
 @media (min-width: 1500px) { .hero { min-height: 680px; } }
 @media (max-width: 760px) {
   .masthead { min-height: 88px; }
