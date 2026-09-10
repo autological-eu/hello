@@ -6,7 +6,7 @@ A minimal, responsive static landing page using the supplied autological logo an
 
 ## Development
 
-Open `index.html` in a browser, or serve this directory with any static HTTP server. Edit `index.html` for content and `styles.css` for presentation. The original supplied logo is in `assets/logo.png`.
+Open `index.html` in a browser, or serve this directory with any static HTTP server. Edit `index.html` for content and `styles.css` for presentation. The original supplied logo is in `assets/autological-logo.png`.
 
 ## Publishing
 
