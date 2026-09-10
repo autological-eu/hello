@@ -12,7 +12,7 @@ h1 { margin: 0; font-size: clamp(56px, 6.5vw, 100px); line-height: 1.04; letter-
 .logical { color: #777694; }
 .logo-stage { position: relative; text-align: center; padding: 15px 0; overflow: hidden; }
 .logo-frame img { width: min(100%, 490px); height: auto; display: block; margin: auto; animation: logo-loop 1.6s cubic-bezier(.65,0,.25,1) both; }
-@keyframes logo-loop { from { transform: rotate(-360deg); } to { transform: rotate(0deg); } }
+@keyframes logo-loop { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
 @media (min-width: 1500px) { .hero { min-height: 680px; } }
 @media (max-width: 760px) {
   .masthead { min-height: 88px; }
